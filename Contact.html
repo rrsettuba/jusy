@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSY TOURS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="./img/Logo.jpeg" alt="Jusy Tours Logo" class="logo"> 
+        <h2>WELCOME TO JUSY TOURS AND TRAVEL LTD</h2>
+        <h3>+256784180042/+256704480341</h3>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Gallery.html">Gallery</a></li> <!-- Fixed spelling: "Gallary" → "Gallery" -->
+            <li><a href="Contact.html"class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="booking-container">
+        <h2>Book Your Adventure</h2>
+        <form class="booking-form" action="/process-booking" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="tour-type">Tour Type</label>
+                    <select id="tour-type" name="tour-type" required>
+                        <option value="">Select a tour</option>
+                        <option value="safari">Wildlife Safari</option>
+                        <option value="hiking">Mountain Hiking</option>
+                        <option value="cultural">Cultural Tour</option>
+                        <option value="beach">Beach Vacation</option>
+                        <option value="city">City Exploration</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tour-date">Tour Date</label>
+                    <input type="date" id="tour-date" name="tour-date" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="adults">Adults</label>
+                    <input type="number" id="adults" name="adults" min="1" value="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="children">Children</label>
+                    <input type="number" id="children" name="children" min="0" value="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="special-requests">Special Requests</label>
+                <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">booking terms</a></label>
+            </div>
+            
+            <button type="submit" class="book-now-btn">Book Now</button>
+        </form>
+    </div>
+        
+    <footer>
+        <a href="https://www.facebook.com/Jusytours" target="_blank">
+            <img src="/img/facebook-icon.png" alt="Facebook" width="20">
+        </a>
+        <a href="https://www.x.com/Jusytours" target="_blank"width="20">
+            <img src="./img/x-icon.png" alt="Twitter"width="20">
+        </a>
+        <a href="https://www.instagram.com/jusytours" target="_blank">
+            <img src="/img/instagram-icon.jpg" alt="instagram"width="20">
+        </a>
+        <a href="https://www.tiktok.com/jusytours" target="_blank">
+                <img src="/img/tiktok-icon.png" alt="Tiktok" width="20">
+        </a>
+        <a href="https://www.linkedin.com/jusy-tours" target="_blank">
+            <img src="/img/linkedin-icon.png" alt="linkedin" width="20">
+        </a>
+        &copy; All Rights Reserved: Jusytours 2025
+    </footer>
+</body>
+</html>
